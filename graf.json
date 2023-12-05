@@ -1,0 +1,29 @@
+{
+	"graph": {
+		"Poznan": ["Berlin","Lodz","Wroclaw","Bydgoszcz"],
+		"Berlin": ["Poznan","Szczecin"],
+		"Warszawa": ["Lodz","Lublin","Bydgoszcz","Gdansk","Kielce"],
+		"Lodz": ["Poznan","Warszawa","Czestochowa","Wroclaw"],
+		"Bydgoszcz": ["Poznan","Warszawa","Szczecin","Gdansk"],
+		"Szczecin": ["Berlin","Bydgoszcz","Gdansk"],
+		"Krakow": ["Czestochowa","Kielce"],
+		"Gdansk": ["Szczecin","Warszawa","Bydgoszcz"],
+		"Lublin": ["Warszawa","Kielce"],
+		"Kielce": ["Lublin","Warszawa","Czestochowa","Krakow"],
+		"Wroclaw": ["Poznan","Lodz","Czestochowa"],
+		"Czestochowa": ["Lodz","Krakow","Kielce","Wroclaw"]
+	},
+	"edges": {
+		"Berlin":{"Szczecin": 7,"Poznan": 13},
+		"Szczecin":{"Gdansk": 17,"Bydgoszcz": 11},
+		"Gdansk":{"Bydgoszcz": 8,"Warszawa": 19},
+		"Bydgoszcz":{"Warszawa": 12,"Poznan": 5},
+		"Poznan":{"Wroclaw": 7,"Lodz": 9},
+		"Wroclaw":{"Lodz": 9,"Czestochowa": 7},
+		"Krakow":{"Czestochowa": 4,"Kielce": 4},
+		"Czestochowa":{"Kielce": 4,"Lodz": 5},
+		"Lodz":{"Warszawa": 5},
+		"Kielce":{"Warszawa": 7,"Lublin": 6},
+		"Lublin":{"Warszawa": 7}
+	}
+}

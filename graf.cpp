@@ -40,24 +40,24 @@ class graf{
     int odczytajgraf(){
         std::ifstream f("graf.json");
         json data = json::parse(f);
-        plik.open(d,std::ios::in);
-        if (!plik.is_open()) {
-            std::cout << "Nie można otworzyć pliku: " << d<< std::endl;
-            exit(-1);
-            }
-        std::cout<<"otwarto"<<std::endl;
-        std::string linia;
-        int i = 0;
-        while (std::getline(plik, linia)) {
-            zawartosc.push_back(linia);   
-            i++; 
-            }
-        std::cout<<"--"<<i<<"--"<<std::endl;
-        plik.close();
-        for(std::string line : zawartosc){
-            //TODO zamiana na słowa i wartości
-        }
-        return i;
+    //     plik.open(d,std::ios::in);
+    //     if (!plik.is_open()) {
+    //         std::cout << "Nie można otworzyć pliku: " << d<< std::endl;
+    //         exit(-1);
+    //         }
+    //    std::cout<<"otwarto"<<std::endl;
+    //     std::string linia;
+    //     int i = 0;
+    //     while (getline(plik, linia)) {
+    //         zawartosc.push_back(linia);   
+    //         i++; 
+    //         }
+    //     std::cout<<"--"<<i<<"--"<<std::endl;
+    //     plik.close();
+    //     for(std::string line : zawartosc){
+    //         TODO zamiana na słowa i wartości
+    //     }
+    //     return i;
         }
        
     

@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <iostream>
+#include <vector>
 
 
 
@@ -20,11 +21,5 @@ int main(){
         {0,0,0,1,0,0,1,0,0,1,1,0}, //12
     };
 
-    int t = 0;
-    while (true){
-        t++;
-        std::cout<<t<<std::endl;
-   
-    }
     return 0;
 }
